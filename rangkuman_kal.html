@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'rangkuman_kal';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    <no title>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Frangkuman_kal.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/rangkuman_kal.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p>1.2 Sistem Persamaan Linear
+Menghitung dan mempelajari solusi persamaan, serta sistem persamaan, tanpa diragukan lagi memainkan peran penting dalam matematika; meskipun kami segera menambahkan bahwa ini bukan satu-satunya hal yang dilakukan para matematikawan! Dalam bab ini, kita akan mengembangkan teori yang pada dasarnya lengkap untuk persamaan matematis yang relatif sederhana: yaitu, persamaan linear.
+Hal ini akan menjadi pengantar secara tidak langsung bagi studi aljabar linear kita, karena di balik deskripsi parametrik solusi sistem linear tersirat konsep-konsep ruang vektor seperti subruang, rentangan (span), dan kebebasan linear.</p>
+<p>1.2.1 Sistem Persamaan Linear
+Definition 1.2.1. Persamaan Linear.  Sebuah ekspresi linear dalam
+peubah tak diketahui (atau variabel) <span class="math notranslate nohighlight">\(x_1,x_2, \cdots ,x_n\)</span> adalah ekspresi berbentuk
+<span class="math notranslate nohighlight">\(a_1x_1 + a_2x_2 + \cdots + a_nx_n,\)</span>
+dengan <span class="math notranslate nohighlight">\(a_1,a_2,...a_n\)</span> adalah bilangan real tetap.
+Sebuah persamaan linear dalam peubah <span class="math notranslate nohighlight">\(x_1,x_2,..x_n\)</span> adalah persamaan yang dapat disederhanakan—hanya menggunakan penjumlahan dan pengurangan—menjadi bentuk
+<span class="math notranslate nohighlight">\(a_1x_1+a_2x_2+...=a_nx_n = b,
+Diberikan suatu persamaan linear dalam bentuk baku (1.2.1), persamaan tersebut disebut homogen jika,b = 0 dan nonhomogen jika \)</span>b \neq 0$ .
+Example 1.2.2. Persamaan Linear dan Nonlinear.</p>
+<ol class="arabic simple">
+<li><p>Tinjau <span class="math notranslate nohighlight">\(\sqrt{3}x + \sin(5) = 2z - e^{4}y\)</span>.Ini adalah persamaan linear dalam peubah x,y,z
+Bentuk bakunya adalah sqrt(3)x + e^(4)y - 2z = -sin(5)Karena ruas kanannya tak nol, persamaan ini bersifat nonhomogen.</p></li>
+<li><p>Persamaan <span class="math notranslate nohighlight">\(x^{2}y\)</span> + y^{2}<span class="math notranslate nohighlight">\( = 1 adalah persamaan nonlinear dalam peubah x dan y.
+Definition 1.2.3. Sistem Persamaan Linear.  Sebuah sistem persamaan linear (atau sistem linear) adalah himpunan persamaan linear.
+Definition 1.2.3. Sistem Persamaan Linear. Sebuah sistem linear disebut homogen jika seluruh persamaannya homogen.Saat menampilkan sistem yang terdiri atas m persamaan dalam n peubah
+\)</span>x_1,x_2,…a_n<span class="math notranslate nohighlight">\( biasanya kita menuliskan setiap persamaan dalam bentuk baku dan menyelaraskan suku-suku yang bersesuaian ke dalam kolom. 
+Remark 1.2.4.  Anda perlu segera membiasakan diri dengan notasi indeks ganda yang digunakan untuk menampilkan sistem linear. Berikut cara memahaminya:
+Indeks \)</span>i<span class="math notranslate nohighlight">\( pada \)</span>a_i_j<span class="math notranslate nohighlight">\( menunjukkan baris ke- \)</span>i<span class="math notranslate nohighlight">\( dalam sistem yang ditampilkan, atau secara ekuivalen, persamaan ke- \)</span>i<span class="math notranslate nohighlight">\( Indeks \)</span>j<span class="math notranslate nohighlight">\( pada \)</span>a_i_j<span class="math notranslate nohighlight">\( menunjukkan kolom ke- \)</span>j<span class="math notranslate nohighlight">\(,menunjukkan kolom ke- \)</span>j<span class="math notranslate nohighlight">\(, untuk \)</span>1 \leq j \leq n<span class="math notranslate nohighlight">\(.
+Definition 1.2.5. Solusi Sistem Linear.  Sebuah solusi persamaan linear
+\begin{cases}
+a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &amp;= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n &amp;= b_2 \\
+\vdots &amp; \\
+a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n &amp;= b_m
+\end{cases} 
+adalah sebuah \)</span>n<span class="math notranslate nohighlight">\( -tuple \)</span>(s_1, s_2, \dots, s_n)<span class="math notranslate nohighlight">\(. yang merupakan solusi dari masing-masing \)</span>m<span class="math notranslate nohighlight">\( persamaan dalam sistem tersebut. Kita katakan bahwa \)</span>(s_1, s_2, \dots, s_n)<span class="math notranslate nohighlight">\(.  memecahkan sistem tersebut.
+Example 1.2.6. Solusi Sistem Elementer.  Untuk tiap sistem berikut, tentukan himpunan solusinya.
+\begin{cases}
+x - y = 0 \\
+x - y = 1
+\end{cases}
+1.2.1.1 Representasi Matriks dari Sistem Linear
+Definition 1.2.7. Representasi Matriks dari Sistem Linear. 
+Jika \)</span>A<span class="math notranslate nohighlight">\(
+adalah matriks koefisien dari suatu sistem persamaan linear dan \)</span>B<span class="math notranslate nohighlight">\(
+adalah vektor konstanta, maka kita akan menuliskan \)</span>LS<span class="math notranslate nohighlight">\( (\)</span>A,b)
+sebagai ungkapan singkat untuk sistem persamaan linear tersebut, yang akan kita sebut sebagai representasi matriks dari sistem linear.
+Example 1.2.8. Notasi untuk sistem persamaan linear.  Sistem persamaan linear
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{matrix}2x_{1}+4x_{2}-3x_{3}+5x_{4}+x_{5}=9\\ 3x_{1}+x_{2}+x_{4}-3x_{5}=0\\ -2x_{1}+7x_{2}-5x_{3}+2x_{4}+2x_{5}=-3\end{matrix}\end{split}\]</div>
+<p>Memiliki matriks koefisien
+A = \begin{bmatrix}
+2 &amp; 4 &amp; -3 &amp; 5 &amp; 1 \
+3 &amp; 1 &amp; 0 &amp; 1 &amp; -3 \
+-2 &amp; 7 &amp; -5 &amp; 2 &amp; 2
+\end{bmatrix}
+dan vektor konstanta
+b = \begin{bmatrix} 9 \ 0 \
+dan sehingga akan direferensikan sebagai <span class="math notranslate nohighlight">\(LS\)</span> (<span class="math notranslate nohighlight">\(A,b\)</span>)
+Definition 1.2.9. Matriks Augmentasi.
+Matriks augmentasi merepresentasikan semua informasi penting dalam sistem persamaan, karena nama-nama variabel telah diabaikan, dan satu-satunya koneksi dengan variabel adalah lokasi koefisien mereka dalam matriks. Perlu diperhatikan bahwa matriks augmentasi hanyalah sebuah matriks, dan bukan sistem persamaan. Namun, matriks augmentasi selalu terkait dengan suatu sistem persamaan, dan sebaliknya.
+Example 1.2.10. Matriks augmentasi.  Berikut adalah sistem berikut dengan 3 persamaan dalam 3 variabel.
+\begin{cases}
+x_1 - x_2 + 2x_3 = 1 \
+2x_1 + x_2 + x_3 = 8 \
+x_1 + x_2 = 5
+\end{cases}
+Berikut adalah matriks augmentasinya.
+\left[
+\begin{array}{ccc|c}
+1 &amp; -1 &amp; 2 &amp; 1 \
+2 &amp; 1 &amp; 1 &amp; 8 \
+1 &amp; 1 &amp; 0 &amp; 5
+\end{array}
+\right]
+Computation 1.2.11. Matriks Augmentasi.  Sage memiliki metode matriks, .augment(), yang akan menggabungkan dua matriks, berdampingan asalkan keduanya memiliki jumlah baris yang sama. Metode yang sama akan memungkinkan Anda untuk mengaugmentasi matriks dengan vektor kolom, seperti yang dijelaskan dalam Definition 1.2.9, asalkan jumlah entri dalam vektor sesuai dengan jumlah baris untuk matriks.
+A = matrix(QQ, 3, 3, [[1, -1, 2],
+[2,  1, 1],
+[1,  1, 0]])
+b = vector(QQ, [1, 8, 5])
+M = A.augment(b)
+M</p>
+<div class="math notranslate nohighlight">
+\[x_1 + x_2 + x_3 + x_4 + x_5 = 15\]</div>
+<div class="math notranslate nohighlight">
+\[2x_1 + x_2 + x_3 + x_4 + x_5 = 16\]</div>
+<div class="math notranslate nohighlight">
+\[2x_1 + 2x_2 + x_3 + x_4 + x_5 = 18\]</div>
+<div class="math notranslate nohighlight">
+\[2x_1 + 2x_2 + 2x_3 + x_4 + x_5 = 21\]</div>
+<div class="math notranslate nohighlight">
+\[2x_1 + 2x_2 + 2x_3 + 2x_4 + x_5 = 25\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp; 1 | 15\\
+2 &amp; 1 &amp; 1 &amp; 1 &amp; 1 | 16\\
+2 &amp; 2 &amp; 1 &amp; 1 &amp; 1 | 18\\
+2 &amp; 2 &amp; 2 &amp; 1 &amp; 1 | 21\\
+2 &amp; 2 &amp; 2 &amp; 2 &amp; 1 | 25\\
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[R_2 = R_2 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_3 = R_3 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_4 = R_4 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_5 = R_5 - 2R_1\]</div>
+<p>(2,1,1,1,1|16) -2(1,1,1,1,1|15)
+= (0, -1, -1, -1, -1| -14)</p>
+<p>(2,2,1,1,1|18) -2(1,1,1,1,1|15)
+=(0,0, -1, -1, -1| -12)</p>
+<p>(2,2,2,1,1|21) -2(1,1,1,1,1|15)
+=(0,0,0, -1, -1|-9)</p>
+<p>(2,2,2,2,1|25) -2(1,1,1,1,1|15)
+=(0,0,0,0, -1| -5)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; 1 &amp;1 | 15\\
+2 &amp;-1 &amp;-1 &amp;-1 &amp;-1 |-14\\
+2 &amp; 2 &amp; 1 &amp; 1 &amp;-1 |-12\\
+0 &amp; 0 &amp; 0 &amp; -1 &amp;-1 |-9\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; -1 |-5\\
+\end{bmatrix}
+\end{split}\]</div>
+<p>-X_5 = -5
+X_5 = 5</p>
+<p>-X_4`- X_5 = -9
+-X_4 - 5 = -9
+X_4 = 4</p>
+<p>-X_3 - X_4 - X_5 = 12
+-X_3 - 4 - = - 12
+X_3 = 3</p>
+<p>-X_2 - X_3 - X_4 - X_5 = -14
+X_2 - 3 - 4 - 5 = - 14
+X_2 = 2</p>
+<p>X_1 + X_2 + X_3 + X_4 + X_5 = 15
+X_1 + 2 + 3 + 4 + 5 = 15
+X_1 = 1</p>
+<p>X_1 = 1, X_2 = 2, X_3 = 3,  X_4 = 4,  X_5 = 5</p>
+<div class="math notranslate nohighlight">
+\[R_2 = R_2 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_3 = R_3 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_4 = R_4 - 2R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_5 = R_5 - 2R_1\]</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
