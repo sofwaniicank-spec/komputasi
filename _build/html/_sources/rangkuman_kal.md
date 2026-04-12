@@ -1,8 +1,8 @@
-#1.2 Sistem Persamaan Linear#
+1.2 Sistem Persamaan Linear#
 Menghitung dan mempelajari solusi persamaan, serta sistem persamaan, tanpa diragukan lagi memainkan peran penting dalam matematika; meskipun kami segera menambahkan bahwa ini bukan satu-satunya hal yang dilakukan para matematikawan! Dalam bab ini, kita akan mengembangkan teori yang pada dasarnya lengkap untuk persamaan matematis yang relatif sederhana: yaitu, persamaan linear.
 Hal ini akan menjadi pengantar secara tidak langsung bagi studi aljabar linear kita, karena di balik deskripsi parametrik solusi sistem linear tersirat konsep-konsep ruang vektor seperti subruang, rentangan (span), dan kebebasan linear.
 
-##1.2.1 Sistem Persamaan Linear
+1.2.1 Sistem Persamaan Linear
 Definition 1.2.1. Persamaan Linear.  Sebuah ekspresi linear dalam 
 peubah tak diketahui (atau variabel) $x_1,x_2, \cdots ,x_n$ adalah ekspresi berbentuk
 $a_1x_1 + a_2x_2 + \cdots + a_nx_n,$
@@ -11,14 +11,17 @@ Sebuah persamaan linear dalam peubah $x_1,x_2,..x_n$ adalah persamaan yang dapat
 $a_1x_1+a_2x_2+...=a_nx_n = b,
 Diberikan suatu persamaan linear dalam bentuk baku (1.2.1), persamaan tersebut disebut homogen jika,b = 0 dan nonhomogen jika $b \neq 0$ .
 Example 1.2.2. Persamaan Linear dan Nonlinear.
+
 1. Tinjau $\sqrt{3}x + \sin(5) = 2z - e^{4}y$.Ini adalah persamaan linear dalam peubah x,y,z
 Bentuk bakunya adalah sqrt(3)x + e^(4)y - 2z = -sin(5)Karena ruas kanannya tak nol, persamaan ini bersifat nonhomogen.
+
 2. Persamaan $x^{2}y$ + y^{2}$ = 1 adalah persamaan nonlinear dalam peubah x dan y.
 Definition 1.2.3. Sistem Persamaan Linear.  Sebuah sistem persamaan linear (atau sistem linear) adalah himpunan persamaan linear.
 Definition 1.2.3. Sistem Persamaan Linear. Sebuah sistem linear disebut homogen jika seluruh persamaannya homogen.Saat menampilkan sistem yang terdiri atas m persamaan dalam n peubah
 $x_1,x_2,...a_n$ biasanya kita menuliskan setiap persamaan dalam bentuk baku dan menyelaraskan suku-suku yang bersesuaian ke dalam kolom. 
 Remark 1.2.4.  Anda perlu segera membiasakan diri dengan notasi indeks ganda yang digunakan untuk menampilkan sistem linear. Berikut cara memahaminya:
-Indeks $i$ pada $a_i_j$ menunjukkan baris ke- $i$ dalam sistem yang ditampilkan, atau secara ekuivalen, persamaan ke- $i$ Indeks $j$ pada $a_i_j$ menunjukkan kolom ke- $j$,menunjukkan kolom ke- $j$, untuk $1 \leq j \leq n$.
+Indeks $i$ pada $a_i_j$ menunjukkan baris ke- $i$ dalam sistem yang ditampilkan, atau secara ekuivalen, persamaan ke- $i$ Indeks $j$ pada $a_i_j$ menunjukkan kolom 
+ke- $j$ menunjukkan kolom ke- $j$, untuk $1 \leq j \leq n$.
 Definition 1.2.5. Solusi Sistem Linear.  Sebuah solusi persamaan linear
 \begin{cases}
 a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &= b_1 \\
@@ -32,8 +35,10 @@ Example 1.2.6. Solusi Sistem Elementer.  Untuk tiap sistem berikut, tentukan him
 x - y = 0 \\
 x - y = 1
 \end{cases}
-###1.2.1.1 Representasi Matriks dari Sistem Linear
+
+1.2.1.1 Representasi Matriks dari Sistem Linear
 Definition 1.2.7. Representasi Matriks dari Sistem Linear. 
+
  Jika $A$
  adalah matriks koefisien dari suatu sistem persamaan linear dan $B$
  adalah vektor konstanta, maka kita akan menuliskan $LS$ ($A,b) 
@@ -51,6 +56,7 @@ A = \begin{bmatrix}
 3 & 1 & 0 & 1 & -3 \\
 -2 & 7 & -5 & 2 & 2
 \end{bmatrix}
+
 dan vektor konstanta
 b = \begin{bmatrix} 9 \\ 0 \\
 dan sehingga akan direferensikan sebagai $LS$ ($A,b$)
@@ -62,14 +68,13 @@ x_1 - x_2 + 2x_3 = 1 \\
 2x_1 + x_2 + x_3 = 8 \\
 x_1 + x_2 = 5
 \end{cases}
+
 Berikut adalah matriks augmentasinya.
-\left[
-\begin{array}{ccc|c}
+\left[\begin{array}{ccc|c}
 1 & -1 & 2 & 1 \\
 2 & 1 & 1 & 8 \\
 1 & 1 & 0 & 5
-\end{array}
-\right]
+\end{array}\right]
 Computation 1.2.11. Matriks Augmentasi.  Sage memiliki metode matriks, .augment(), yang akan menggabungkan dua matriks, berdampingan asalkan keduanya memiliki jumlah baris yang sama. Metode yang sama akan memungkinkan Anda untuk mengaugmentasi matriks dengan vektor kolom, seperti yang dijelaskan dalam Definition 1.2.9, asalkan jumlah entri dalam vektor sesuai dengan jumlah baris untuk matriks. 
 A = matrix(QQ, 3, 3, [[1, -1, 2],
                       [2,  1, 1],
@@ -146,3 +151,61 @@ $$R_2 = R_2 - 2R_1$$
 $$R_3 = R_3 - 2R_1$$
 $$R_4 = R_4 - 2R_1$$
 $$R_5 = R_5 - 2R_1$$
+
+Metode Invers 
+
+$$2x_1 - x_1) = 16 - 15 x_1 = 1$$
+$$2x_2 - x_2) = 18 - 16 x_2 = 16$$
+$$2x_3 - x_3) = 21 - 18 x_3 = 3$$
+$$2x_4 - x_4) = 25 - 21 x_4 = 4$$
+
+1 + 2 + 3 + 4 + x_5 = 15
+$$10 +  x_5 + x_5 =  15 x_5 = 5$$
+
+Hasil akhir
+
+ $$x_1 = 1,  x_2 = 2, x_3 = 3, x_4 = 5$$
+
+
+1. Determinan Matriks 𝐴
+
+Determinan matriks 5×5 dapat dihitung dengan metode ekspansi kofaktor pada baris pertama
+
+det(A)= $$aC_11 + bC_12 + cC_13 + dC_14 + eC_15
+dengan:
+
+C_ij = $(-1)^{i+j}$ M_ij
+
+Sehingga:
+
+$\det(A) = aM_{11} - bM_{12} + cM_{13} - dM_{14} + eM_{15}$
+Contoh:
+
+$$M_{11} =
+\begin{vmatrix}
+g & h & i & j \\
+l & m & n & o \\
+q & r & s & t \\
+v & w & x & y
+\end{vmatrix}$$
+
+2. Adjoin Matriks 𝐴
+
+Adjoin dari matriks 𝐴 adalah transpose dari matriks kofaktor
+
+$\text{adj}(A) = (C_{ij})^T$$$
+\text{adj}(A) =
+\begin{bmatrix}
+C_{11} & C_{21} & C_{31} & C_{41} & C_{51} \\
+C_{12} & C_{22} & C_{32} & C_{42} & C_{52} \\
+C_{13} & C_{23} & C_{33} & C_{43} & C_{53} \\
+C_{14} & C_{24} & C_{34} & C_{44} & C_{54} \\
+C_{15} & C_{25} & C_{35} & C_{45} & C_{55}
+\end{bmatrix}
+$$
+
+
+3. Invers Matriks 𝐴
+
+jika det $\det(A) \neq 0$ maka invers matriks 𝐴 dapat dihitung dengan rumus:
+$A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)$
