@@ -146,3 +146,52 @@ $$R_2 = R_2 - 2R_1$$
 $$R_3 = R_3 - 2R_1$$
 $$R_4 = R_4 - 2R_1$$
 $$R_5 = R_5 - 2R_1$$
+
+Metode Invers 
+$$2x_1 - x_1) = 16 - 15 x_1 = 1$$
+$$2x_2 - x_2) = 18 - 16 x_2 = 16$$
+$$2x_3 - x_3) = 21 - 18 x_3 = 3$$
+$$2x_4 - x_4) = 25 - 21 x_4 = 4$$
+
+1 + 2 + 3 + 4 + x_5 = 15
+$$10 +  x_5 + x_5 =  15 x_5 = 5$$
+
+Hasil akhir
+ $$x_1 = 1,  x_2 = 2, x_3 = 3, x_4 = 5$$
+
+
+1. Determinan Matriks 𝐴
+Determinan matriks 5×5 dapat dihitung dengan metode ekspansi kofaktor pada baris pertama
+
+det(A)= $$aC_11 + bC_12 + cC_13 + dC_14 + eC_15
+dengan:
+C_ij = $(-1)^{i+j}$ M_ij
+Sehingga:
+$\det(A) = aM_{11} - bM_{12} + cM_{13} - dM_{14} + eM_{15}$
+Contoh:
+$$
+M_{11} =
+\begin{vmatrix}
+g & h & i & j \\
+l & m & n & o \\
+q & r & s & t \\
+v & w & x & y
+\end{vmatrix}
+$$
+
+2. Adjoin Matriks 𝐴
+Adjoin dari matriks 𝐴 adalah transpose dari matriks kofaktor
+$\text{adj}(A) = (C_{ij})^T$
+$$
+\text{adj}(A) =
+\begin{bmatrix}
+C_{11} & C_{21} & C_{31} & C_{41} & C_{51} \\
+C_{12} & C_{22} & C_{32} & C_{42} & C_{52} \\
+C_{13} & C_{23} & C_{33} & C_{43} & C_{53} \\
+C_{14} & C_{24} & C_{34} & C_{44} & C_{54} \\
+C_{15} & C_{25} & C_{35} & C_{45} & C_{55}
+\end{bmatrix}
+$$
+3. Invers Matriks 𝐴
+jika det $\det(A) \neq 0$ maka invers matriks 𝐴 dapat dihitung dengan rumus:
+$A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)$
