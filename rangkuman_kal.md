@@ -171,7 +171,7 @@ Hasil akhir
 
 Determinan matriks 5×5 dapat dihitung dengan metode ekspansi kofaktor pada baris pertama
 
-det(A)= $$aC_11 + bC_12 + cC_13 + dC_14 + eC_15
+det(A)= $aC_{11} + bC_{12} + cC_{13} + dC_{14} + eC_{15}$
 dengan:
 
 C_ij = $(-1)^{i+j}$ M_ij
