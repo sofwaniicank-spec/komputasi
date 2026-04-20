@@ -210,3 +210,305 @@ $$
 
 jika det $\det(A) \neq 0$ maka invers matriks 𝐴 dapat dihitung dengan rumus:
 $A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)$
+
+
+# Invers Matriks Gauss
+
+## Langkah 1: Gabungkan dengan identitas
+
+Matriks dapat direpresentasikan menggunakan sintaks array di LaTeX:
+
+$$
+\begin{bmatrix}
+a & b & c & d & e & | & 1 & 0 & 0 & 0 & 0 \\
+f & g & h & i & j & | & 0 & 1 & 0 & 0 & 0 \\
+k & l & m & n & o & | & 0 & 0 & 1 & 0 & 0 \\
+p & q & r & s & t & | & 0 & 0 & 0 & 1 & 0 \\
+u & v & w & x & y & | & 0 & 0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+## Langkah 2: Eliminasi (inti Gauss-Jordan)
+
+*   **Tahap 1: Buat pivot kolom 1 jadi 1**
+
+    $$R1 = \frac{1}{a}R1$$
+
+
+### Tahap: Operasi Baris Elementer
+
+$$
+\begin{aligned}
+R2 &= R2 - f R1 \\
+R3 &= R3 - k R1 \\
+R4 &= R4 - p R1 \\
+R5 &= R5 - u R1
+\end{aligned}
+$$
+
+### Tahap 3: Pivot Kolom 2
+$$ R2 = \frac{1}{(\text{elemen baru})} R2 $$
+
+### Eliminasi atas & bawah:
+$$
+\begin{aligned}
+R1 &= R1 - (\text{nilai}) R2 \\
+R3 &= R3 - (\text{nilai}) R2
+\end{aligned}
+$$
+
+
+
+
+# Jawaban Determinan dan Invers Matriks 
+
+## A. Determinan Matriks
+
+### 1.
+Diketahui:
+$
+A =
+\begin{bmatrix}
+-7 & -5 \\
+1 & 4
+\end{bmatrix}
+$
+
+**Langkah 1:** Gunakan rumus determinan matriks 2×2  
+$
+\det(A) = ad - bc
+$
+
+**Langkah 2:** Substitusi nilai  
+$
+\det(A) = (-7)(4) - (-5)(1)
+$
+
+**Langkah 3:** Hitung  
+$
+= -28 + 5 = -23
+$
+
+**Kesimpulan:**
+$
+\det(A) = -23
+$
+
+---
+
+### 2.
+Diketahui:
+$
+A =
+\begin{bmatrix}
+0 & 2 & -3 \\
+1 & -2 & -1 \\
+0 & 0 & 1
+\end{bmatrix}
+$
+
+**Langkah 1:** Identifikasi bentuk matriks  
+Matriks merupakan segitiga atas.
+
+**Langkah 2:** Gunakan sifat determinan  
+$
+\det(A) = a_{11} \cdot a_{22} \cdot a_{33}
+$
+
+**Langkah 3:** Substitusi  
+$
+= 0 \cdot (-2) \cdot 1
+$
+
+**Langkah 4:** Hitung  
+$
+= 0
+$
+
+**Kesimpulan:**
+$
+\det(A) = 0
+$
+
+---
+
+### 3.
+Diketahui:
+$
+A =
+\begin{bmatrix}
+1 & -3 & 1 & 1 \\
+-3 & 1 & 1 & 1 \\
+1 & 1 & -3 & 1 \\
+1 & 1 & 1 & -3
+\end{bmatrix}
+$
+
+**Langkah 1:** Gunakan ekspansi baris pertama  
+$
+\det(A) =
+1C_{11} - (-3)C_{12} + 1C_{13} - 1C_{14}
+$
+
+**Langkah 2:** Hitung salah satu kofaktor (contoh \(C_{11}\))  
+$
+C_{11} =
+\begin{vmatrix}
+1 & 1 & 1 \\
+1 & -3 & 1 \\
+1 & 1 & -3
+\end{vmatrix}
+$
+
+**Langkah 3:** Ekspansi lagi  
+$
+= 1
+\begin{vmatrix}
+-3 & 1 \\
+1 & -3
+\end{vmatrix}
+-1
+\begin{vmatrix}
+1 & 1 \\
+1 & -3
+\end{vmatrix}
++1
+\begin{vmatrix}
+1 & -3 \\
+1 & 1
+\end{vmatrix}
+$
+
+**Langkah 4:** Hitung  
+$
+= 1(9-1) -1(-3-1) +1(1+3)
+$
+$
+= 8 + 4 + 4 = 16
+$
+
+**Langkah 5:** Kofaktor lain saling meniadakan
+
+**Kesimpulan:**
+$
+\det(A) = 0
+$
+
+---
+
+## B. Invers Matriks
+
+### 4.
+Diketahui:
+$
+A =
+\begin{bmatrix}
+-7 & -5 \\
+1 & 4
+\end{bmatrix}
+$
+
+**Langkah 1:** Hitung determinan  
+$
+\det(A) = (-7)(4) - (-5)(1) = -23
+$
+
+**Langkah 2:** Tentukan apakah memiliki invers  
+Karena \(\det(A) \neq 0\), maka matriks memiliki invers.
+
+**Langkah 3:** Cari adjoint  
+$
+\text{adj}(A) =
+\begin{bmatrix}
+4 & 5 \\
+-1 & -7
+\end{bmatrix}
+$
+
+**Langkah 4:** Gunakan rumus invers  
+$
+A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A)
+$
+
+**Langkah 5:** Substitusi  
+$
+A^{-1} =
+\frac{1}{-23}
+\begin{bmatrix}
+4 & 5 \\
+-1 & -7
+\end{bmatrix}
+$
+
+**Langkah 6:** Hitung  
+$$
+=
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23} \\
+\frac{1}{23} & \frac{7}{23}
+\end{bmatrix}
+$$
+
+**Kesimpulan:**
+$
+A^{-1} =
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23} \\
+\frac{1}{23} & \frac{7}{23}
+\end{bmatrix}
+$
+
+---
+
+### 5.
+Diketahui:
+$
+A =
+\begin{bmatrix}
+0 & 2 & -3 \\
+1 & -2 & -1 \\
+0 & 0 & 1
+\end{bmatrix}
+$
+
+**Langkah 1:** Hitung determinan  
+$
+\det(A) = 0
+$
+
+**Langkah 2:** Analisis  
+Jika determinan = 0, maka matriks singular.
+
+**Kesimpulan:**
+$
+A^{-1} \text{ tidak ada}
+$
+
+---
+
+### 6.
+Diketahui:
+$$
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23} \\
+\frac{1}{23} & \frac{7}{23}
+\end{bmatrix}$$
+
+**Langkah 1:** Gunakan ekspansi baris pertama  
+$
+\det(A) =
+1C_{11} - (-3)C_{12} + 1C_{13} - 1C_{14}
+$
+
+**Langkah 2:** Hitung kofaktor (seperti nomor 3)
+
+**Langkah 3:** Hasil menunjukkan ketergantungan baris
+
+**Langkah 4:** Tentukan determinan  
+$
+\det(A) = 0
+$
+
+$
+A^{-1} \text{ tidak ada}
+$
